@@ -42,7 +42,7 @@ tailwind.config = {
 
 <title>Deva Portofolio</title>
 </head>
-<body id="beranda" class="font-sans">
+<body id="beranda" class="font-sans overflow-x-hidden">
 
 <!-- scroll to top button -->
 <div id="scrollUp" class="fixed right-10 max-[475px]:right-5 bottom-[-50px] opacity-0 transition-all duration-300 flex justify-center items-center w-[50px] h-[50px] p-[10px] rounded-full bg-brand-lighter hover:bg-brand-hover text-2xl cursor-pointer z-50">
@@ -56,7 +56,7 @@ tailwind.config = {
 <div class="py-[30px]">
 <div class="w-4/5 max-[992px]:w-[90%] mx-auto">
    <div class="flex justify-center">
-      <ul class="flex items-center gap-[45px]">
+      <ul class="flex items-center flex-wrap justify-center gap-[20px] sm:gap-[45px]">
          <li class="list-none"><a href="#tentang" class="no-underline text-black">tentang</a></li>
          <li class="list-none"><a href="#proyek" class="no-underline text-black">proyek</a></li>
          <li class="list-none"><a href="#kontak" class="no-underline text-black">kontak</a></li>
@@ -70,7 +70,7 @@ tailwind.config = {
 <div class="my-[70px]">
 <div class="w-4/5 max-[992px]:w-[90%] mx-auto">
    <div class="flex flex-col-reverse items-center gap-[70px]">
-      <img src="./assets/icon.jpeg" alt="Hero Image" class="w-[300px] h-[300px] rounded-full object-cover">
+      <img src="./assets/icon.jpeg" alt="Hero Image" class="w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] md:w-[300px] md:h-[300px] rounded-full object-cover">
       <h1 class="text-center text-[60px] max-md:text-[45px] max-[475px]:text-[40px] font-medium leading-[1.3]">
          Hai!, saya <span id="element" class="font-bold text-brand"></span> <br>
          Web Developer
@@ -92,7 +92,7 @@ tailwind.config = {
    <h1 class="text-center mb-10 text-4xl md:text-5xl font-bold" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Tentang</h1>
    <div>
       <div class="grid grid-cols-2 max-[992px]:grid-cols-1 items-center gap-[50px] mb-[150px]">
-         <img src="./assets/profil.png" alt="Tentang Image" class="w-[500px] h-[500px] object-cover p-[10px] bg-brand-light border border-white rounded-full mx-auto" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
+         <img src="./assets/profil.png" alt="Tentang Image" class="w-[75%] max-w-[500px] aspect-square object-cover p-[10px] bg-brand-light border border-white rounded-full mx-auto" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
          <div class="text-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
             <p class="leading-[2] text-justify mb-[20px]">Nama saya <span class="font-bold">Anak Agung Deva Abhita</span>. Saya memiliki ketertarikan yang besar pada bidang teknologi, khususnya jaringan komputer, dengan cita-cita untuk berkarier sebagai seorang Network Engineer.</p>
             <p class="leading-[2] text-justify mb-[20px]">Selain teknologi, saya juga memiliki ketertarikan pada bidang desain. Ketertarikan tersebut awalnya saya salurkan melalui berbagai aktivitas kreatif seperti menggambar, mengedit foto, dan mengedit video. Seiring waktu, saya mulai mengembangkan ketertarikan tersebut ke bidang yang lebih dekat dengan teknologi, seperti pengembangan web dan perancangan antarmuka pengguna (UI).</p>
@@ -103,7 +103,7 @@ tailwind.config = {
       <div>
          <h1 class="text-center mb-10 text-4xl md:text-5xl font-bold" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Tools yang biasa dipakai</h1>
          <p class="text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Berikut beberapa tools yang biasa dipakai</p>
-         <div class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-[10px] mt-[30px]">
+         <div class="grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-[10px] mt-[30px]">
             <div class="flex items-center gap-[10px] border border-white p-[10px] rounded-[5px] hover:bg-white hover:text-black" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-once="true">
                <img src="./assets/tools/vscode.png" alt="Tools Image" class="w-[50px] bg-white rounded-[5px]">
                <div>
@@ -214,7 +214,7 @@ tailwind.config = {
 <!-- waves -->
 
 <!-- Proyek -->
-<div class="p-[50px]" id="proyek">
+<div class="px-[20px] py-[50px] sm:p-[50px]" id="proyek">
 <div class="w-4/5 max-[992px]:w-[90%] mx-auto">
    <h1 class="text-center text-4xl md:text-5xl font-bold" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Daftar Proyek</h1>
    <p class="text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Berikut ini beberapa proyek yang sudah saya kerjakan.</p>
