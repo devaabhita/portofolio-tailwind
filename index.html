@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Favicon -->
+<link rel="icon" href="./aset/icon.jpeg" type="image/jpeg">
+
+<!-- Tailwind CSS (CDN, no build step needed) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+   theme: {
+   extend: {
+      fontFamily: {
+         sans: ["Poppins", "sans-serif"],
+      },
+      colors: {
+         brand: {
+         DEFAULT: "#216869",
+         light: "#278a8c",
+         lighter: "#2e9192",
+         hover: "#28acae",
+         },
+      },
+   },
+   },
+};
+</script>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- AOS -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<title>Deva Portofolio</title>
+</head>
+<body id="beranda" class="font-sans">
+
+<!-- scroll to top button -->
+<div id="scrollUp" class="fixed right-10 max-[475px]:right-5 bottom-[-50px] opacity-0 transition-all duration-300 flex justify-center items-center w-[50px] h-[50px] p-[10px] rounded-full bg-brand-lighter hover:bg-brand-hover text-2xl cursor-pointer z-50">
+<a href="#beranda" class="text-white no-underline">
+   <i class="fa-solid fa-arrow-up"></i>
+</a>
+</div>
+
+<header>
+<!-- Navbar -->
+<div class="py-[30px]">
+<div class="w-4/5 max-[992px]:w-[90%] mx-auto">
+   <div class="flex justify-center">
+      <ul class="flex items-center gap-[45px]">
+         <li class="list-none"><a href="#tentang" class="no-underline text-black">tentang</a></li>
+         <li class="list-none"><a href="#proyek" class="no-underline text-black">proyek</a></li>
+         <li class="list-none"><a href="#kontak" class="no-underline text-black">kontak</a></li>
+      </ul>
+   </div>
+</div>
+</div>
+<!-- Navbar -->
+
+<!-- Hero -->
+<div class="my-[70px]">
+<div class="w-4/5 max-[992px]:w-[90%] mx-auto">
+   <div class="flex flex-col-reverse items-center gap-[70px]">
+      <img src="./assets/icon.jpeg" alt="Hero Image" class="w-[300px] h-[300px] rounded-full object-cover">
+      <h1 class="text-center text-[60px] max-md:text-[45px] max-[475px]:text-[40px] font-medium leading-[1.3]">
+         Hai!, saya <span id="element" class="font-bold text-brand"></span> <br>
+         Web Developer
+      </h1>
+   </div>
+</div>
+</div>
+<!-- Hero -->
+
+<!-- Waves -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="mb-[-10px] block"><path fill="#216869" fill-opacity="1" d="M0,96L48,117.3C96,139,192,181,288,170.7C384,160,480,96,576,106.7C672,117,768,203,864,240C960,277,1056,267,1152,224C1248,181,1344,107,1392,69.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+<!-- Waves -->
+
+</header>
+
+<!-- Tentang -->
+<div class="bg-brand py-[100px] text-white" id="tentang">
+<div class="w-4/5 max-[992px]:w-[90%] mx-auto">
+   <h1 class="text-center mb-10 text-4xl md:text-5xl font-bold" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Tentang</h1>
+   <div>
+      <div class="grid grid-cols-2 max-[992px]:grid-cols-1 items-center gap-[50px] mb-[150px]">
+         <img src="./assets/profil.png" alt="Tentang Image" class="w-[500px] h-[500px] object-cover p-[10px] bg-brand-light border border-white rounded-full mx-auto" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
+         <div class="text-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
+            <p class="leading-[2] text-justify mb-[20px]">Nama saya <span class="font-bold">Anak Agung Deva Abhita</span>. Saya memiliki ketertarikan yang besar pada bidang teknologi, khususnya jaringan komputer, dengan cita-cita untuk berkarier sebagai seorang Network Engineer.</p>
+            <p class="leading-[2] text-justify mb-[20px]">Selain teknologi, saya juga memiliki ketertarikan pada bidang desain. Ketertarikan tersebut awalnya saya salurkan melalui berbagai aktivitas kreatif seperti menggambar, mengedit foto, dan mengedit video. Seiring waktu, saya mulai mengembangkan ketertarikan tersebut ke bidang yang lebih dekat dengan teknologi, seperti pengembangan web dan perancangan antarmuka pengguna (UI).</p>
+            <p class="leading-[2] text-justify mb-[30px]">Dalam beberapa waktu terakhir, saya telah mengerjakan berbagai proyek, baik secara mandiri maupun dalam tim. Setiap proyek menjadi kesempatan bagi saya untuk menerapkan pengetahuan yang telah dipelajari sekaligus mengembangkan kemampuan baru. Beberapa proyek mandiri yang telah saya kerjakan saya tampilkan dalam portofolio ini sebagai gambaran dari proses belajar, kemampuan, dan minat saya di bidang teknologi.</p>
+            <a href="#proyek" class="border border-white px-5 py-[10px] text-white no-underline rounded-[5px] hover:bg-white hover:text-black hover:font-bold">Lihat Daftar Proyek</a>
+         </div>
+      </div>
+      <div>
+         <h1 class="text-center mb-10 text-4xl md:text-5xl font-bold" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Tools yang biasa dipakai</h1>
+         <p class="text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Berikut beberapa tools yang biasa dipakai</p>
+         <div class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-[10px] mt-[30px]">
+            <div class="flex items-center gap-[10px] border border-white p-[10px] rounded-[5px] hover:bg-white hover:text-black" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-once="true">
+               <img src="./assets/tools/vscode.png" alt="Tools Image" class="w-[50px] bg-white rounded-[5px]">
+               <div>
+                  <h3 class="font-bold text-lg">Visual Studio Code</h3>
+                  <p>Code Editor</p>
+               </div>
+            </div>
+            <div class="flex items-center gap-[10px] border border-white p-[10px] rounded-[5px] hover:bg-white hover:text-black" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="550" data-aos-once="true">
+               <img src="./assets/tools/golang.png" alt="Tools Image" class="w-[50px] bg-white rounded-[5px]">
+               <div>
+                  <h3 class="font-bold text-lg">Golang</h3>
+                  <p>Programming Language</p>
+               </div>
+            </div>
+            <div class="flex items-center gap-[10px] border border-white p-[10px] rounded-[5px] hover:bg-white hover:text-black" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-once="true">
+               <img src="./assets/tools/php.png" alt="Tools Image" class="w-[50px] bg-white rounded-[5px]">
+               <div>
+                  <h3 class="font-bold text-lg">PHP</h3>
+                  <p>Programming Language</p>
+               </div>
+            </div>
+            <div class="flex items-center gap-[10px] border border-white p-[10px] rounded-[5px] hover:bg-white hover:text-black" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="650" data-aos-once="true">
+               <img src="./assets/tools/laravel.png" alt="Tools Image" class="w-[50px] bg-white rounded-[5px]">
+               <div>
+                  <h3 class="font-bold text-lg">Laravel</h3>
+                  <p>PHP Framework</p>
+               </div>
+            </div>
+            <div class="flex items-center gap-[10px] border border-white p-[10px] rounded-[5px] hover:bg-white hover:text-black" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" data-aos-once="true">
+               <img src="./assets/tools/tailwind.png" alt="Tools Image" class="w-[50px] bg-white rounded-[5px]" />
+               <div>
+                  <h3 class="font-bold text-lg">TailwindCSS</h3>
+                  <p>CSS Framework</p>
+               </div>
+            </div>
+            <div class="flex items-center gap-[10px] border border-white p-[10px] rounded-[5px] hover:bg-white hover:text-black" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="750" data-aos-once="true">
+               <img src="./assets/tools/reactjs.png" alt="Tools Image" class="w-[50px] bg-white rounded-[5px]" />
+               <div>
+                  <h3 class="font-bold text-lg">React JS</h3>
+                  <p>Framework Javascript</p>
+               </div>
+            </div>
+            <div class="flex items-center gap-[10px] border border-white p-[10px] rounded-[5px] hover:bg-white hover:text-black" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" data-aos-once="true">
+               <img src="./assets/tools/nodejs.png" alt="Tools Image" class="w-[50px] bg-white rounded-[5px]" />
+               <div>
+                  <h3 class="font-bold text-lg">Node JS</h3>
+                  <p>Runtime Build</p>
+               </div>
+            </div>
+            <div class="flex items-center gap-[10px] border border-white p-[10px] rounded-[5px] hover:bg-white hover:text-black" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="850" data-aos-once="true">
+               <img src="./assets/tools/nextjs.png" alt="Tools Image" class="w-[50px] bg-white rounded-[5px]" />
+               <div>
+                  <h3 class="font-bold text-lg">Next JS</h3>
+                  <p>Framework Javascript</p>
+               </div>
+            </div>
+            <div class="flex items-center gap-[10px] border border-white p-[10px] rounded-[5px] hover:bg-white hover:text-black" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900" data-aos-once="true">
+               <img src="./assets/tools/js.png" alt="Tools Image" class="w-[50px] bg-white rounded-[5px]" />
+               <div>
+                  <h3 class="font-bold text-lg">Javascript</h3>
+                  <p>Language</p>
+               </div>
+            </div>
+            <div class="flex items-center gap-[10px] border border-white p-[10px] rounded-[5px] hover:bg-white hover:text-black" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="950" data-aos-once="true">
+               <img src="./assets/tools/github.png" alt="Tools Image" class="w-[50px] bg-white rounded-[5px]" />
+               <div>
+                  <h3 class="font-bold text-lg">Github</h3>
+                  <p>Repository</p>
+               </div>
+            </div>
+            <div class="flex items-center gap-[10px] border border-white p-[10px] rounded-[5px] hover:bg-white hover:text-black" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-once="true">
+               <img src="./assets/tools/figma.png" alt="Tools Image" class="w-[50px] bg-white rounded-[5px]" />
+               <div>
+                  <h3 class="font-bold text-lg">Figma</h3>
+                  <p>Design App</p>
+               </div>
+            </div>
+            <div class="flex items-center gap-[10px] border border-white p-[10px] rounded-[5px] hover:bg-white hover:text-black" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1050" data-aos-once="true">
+               <img src="./assets/tools/canva.png" alt="Tools Image" class="w-[50px] bg-white rounded-[5px]" />
+               <div>
+                  <h3 class="font-bold text-lg">Canva</h3>
+                  <p>Design App</p>
+               </div>
+            </div>
+            <div class="flex items-center gap-[10px] border border-white p-[10px] rounded-[5px] hover:bg-white hover:text-black" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1100" data-aos-once="true">
+               <img src="./assets/tools/ai.png" alt="Tools Image" class="w-[50px] bg-white rounded-[5px]" />
+               <div>
+                  <h3 class="font-bold text-lg">Adobe Illustrator</h3>
+                  <p>Design App</p>
+               </div>
+            </div>
+            <div class="flex items-center gap-[10px] border border-white p-[10px] rounded-[5px] hover:bg-white hover:text-black" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1150" data-aos-once="true">
+               <img src="./assets/tools/bootstrap.png" alt="Tools Image" class="w-[50px] bg-white rounded-[5px]" />
+               <div>
+                  <h3 class="font-bold text-lg">Bootstrap</h3>
+                  <p>CSS Framework</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</div>
+<!-- Tentang -->
+
+<!-- waves -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="block"><path fill="#216869" fill-opacity="1" d="M0,320L7.5,314.7C15,309,30,299,45,277.3C60,256,75,224,90,218.7C105,213,120,235,135,208C150,181,165,107,180,85.3C195,64,210,96,225,133.3C240,171,255,213,270,240C285,267,300,277,315,272C330,267,345,245,360,250.7C375,256,390,288,405,288C420,288,435,256,450,240C465,224,480,224,495,218.7C510,213,525,203,540,208C555,213,570,235,585,218.7C600,203,615,149,630,160C645,171,660,245,675,256C690,267,705,213,720,186.7C735,160,750,160,765,170.7C780,181,795,203,810,229.3C825,256,840,288,855,293.3C870,299,885,277,900,229.3C915,181,930,107,945,90.7C960,75,975,117,990,117.3C1005,117,1020,75,1035,48C1050,21,1065,11,1080,53.3C1095,96,1110,192,1125,240C1140,288,1155,288,1170,277.3C1185,267,1200,245,1215,202.7C1230,160,1245,96,1260,80C1275,64,1290,96,1305,106.7C1320,117,1335,107,1350,133.3C1365,160,1380,224,1395,250.7C1410,277,1425,267,1433,261.3L1440,256L1440,0L1432.5,0C1425,0,1410,0,1395,0C1380,0,1365,0,1350,0C1335,0,1320,0,1305,0C1290,0,1275,0,1260,0C1245,0,1230,0,1215,0C1200,0,1185,0,1170,0C1155,0,1140,0,1125,0C1110,0,1095,0,1080,0C1065,0,1050,0,1035,0C1020,0,1005,0,990,0C975,0,960,0,945,0C930,0,915,0,900,0C885,0,870,0,855,0C840,0,825,0,810,0C795,0,780,0,765,0C750,0,735,0,720,0C705,0,690,0,675,0C660,0,645,0,630,0C615,0,600,0,585,0C570,0,555,0,540,0C525,0,510,0,495,0C480,0,465,0,450,0C435,0,420,0,405,0C390,0,375,0,360,0C345,0,330,0,315,0C300,0,285,0,270,0C255,0,240,0,225,0C210,0,195,0,180,0C165,0,150,0,135,0C120,0,105,0,90,0C75,0,60,0,45,0C30,0,15,0,8,0L0,0Z"></path></svg>
+<!-- waves -->
+
+<!-- Proyek -->
+<div class="p-[50px]" id="proyek">
+<div class="w-4/5 max-[992px]:w-[90%] mx-auto">
+   <h1 class="text-center text-4xl md:text-5xl font-bold" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Daftar Proyek</h1>
+   <p class="text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Berikut ini beberapa proyek yang sudah saya kerjakan.</p>
+
+   <div class="grid grid-cols-2 max-md:grid-cols-1 gap-[10px] mt-[50px]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
+      <div class="p-5 shadow-[5px_5px_20px_rgba(0,0,0,0.1)] rounded-[10px]">
+         <img src="./assets/project/proyek1.png" alt="Proyek Image" class="w-full rounded-[10px]">
+         <div class="mt-5">
+            <h2 class="font-bold text-2xl">Website Blog</h2>
+            <p class="leading-[2] mt-[10px] mb-5 text-black/60">ini adalah proyek mandiri pertama saya yang memiliki desain antarmuka, walaupun belum 100% selesai. Saya terlalu terburu-buru dalam belajar sehingga langsung berambisi membuat sebuah blog saat itu.</p>
+            <div class="flex items-center justify-between">
+               <a href="#" class="bg-brand px-5 py-[10px] text-white no-underline rounded-[2px] hover:bg-brand-light">Lihat Website</a>
+               <a href="https://github.com/devaabhita/infokan" target="_blank" class="bg-brand px-5 py-[10px] text-white no-underline rounded-[2px] hover:bg-brand-light">GitHub</a>
+            </div>
+         </div>
+      </div>
+      <div class="p-5 shadow-[5px_5px_20px_rgba(0,0,0,0.1)] rounded-[10px]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350" data-aos-once="true">
+         <img src="./assets/project/proyek2.png" alt="Proyek Image" class="w-full rounded-[10px]">
+         <div class="mt-5">
+            <h2 class="font-bold text-2xl">Website Portofolio</h2>
+            <p class="leading-[2] mt-[10px] mb-5 text-black/60">ini adalah proyek mandiri yang saya bangun untuk mengembangkan fundamental saya terkait HTML dan CSS dasar, saya juga membuat portofolio dengan desain serupa menggunakan Tailwind CSS yang tidak saya publik di github.</p>
+            <div class="flex items-center justify-between">
+               <a href="#" class="bg-brand px-5 py-[10px] text-white no-underline rounded-[2px] hover:bg-brand-light">Lihat Website</a>
+               <a href="https://github.com/devaabhita/portofolio" target="_blank" class="bg-brand px-5 py-[10px] text-white no-underline rounded-[2px] hover:bg-brand-light">GitHub</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</div>
+<!-- Proyek -->
+
+<!-- Waves -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="block"><path fill="#216869" fill-opacity="1" d="M0,128L0,160L288,160L288,256L576,256L576,96L864,96L864,224L1152,224L1152,160L1440,160L1440,320L1152,320L1152,320L864,320L864,320L576,320L576,320L288,320L288,320L0,320L0,320Z"></path></svg>
+<!-- Waves -->
+
+<!-- kontak -->
+<footer id="kontak" class="bg-brand -mt-[10px] text-white">
+   <div class="w-4/5 max-[992px]:w-[90%] mx-auto py-[70px] flex flex-wrap justify-between items-center gap-5 max-md:flex-col-reverse">
+      <p>&copy; Copyright 2026 by <span class="font-bold">Deva Abhita</span></p>
+      <div class="flex flex-wrap justify-center gap-5">
+         <a href="https://www.instagram.com/ankdevv/" target="_blank" class="text-white no-underline text-[40px]"><i class="fa-brands fa-square-instagram"></i></a>
+         <a href="#" class="text-white no-underline text-[40px]"><i class="fa-brands fa-square-facebook"></i></a>
+         <a href="https://www.youtube.com/channel/UC6nN-YNdzVO_bbWogCfL0jw" target="_blank" class="text-white no-underline text-[40px]"><i class="fa-brands fa-square-youtube"></i></a>
+         <a href="https://www.linkedin.com/in/anak-agung-deva-abhita-970033378/" target="_blank" class="text-white no-underline text-[40px]"><i class="fa-brands fa-square-linkedin"></i></a>
+      </div>
+   </div>
+</footer>
+<!-- kontak -->
+
+
+<!-- JS -->
+<script src="./dist/js/script.js"></script>
+
+<!-- Type Js -->
+<script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+
+<script>
+var typed = new Typed('#element', {
+   strings: ["Deva", "Abhita"],
+   typeSpeed: 300,
+   loop: true,
+   backSpeed: 100,
+   showCursor: false,
+   cursorChar: '|',
+   backDelay: 1500,
+});
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+
+</body>
+</html>
