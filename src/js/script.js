@@ -1,9 +1,11 @@
-const scrollUp = document.querySelector(".scroll-up");
+const scrollUp = document.getElementById("scrollUp");
 
 window.onscroll = () => {
    if (window.scrollY > 500) {
-      scrollUp.classList.add("scroll-active");
+      scrollUp.classList.remove("bottom-[-50px]", "opacity-0");
+      scrollUp.classList.add("bottom-10", "opacity-100");
    } else {
-      scrollUp.classList.remove("scroll-active");
+      scrollUp.classList.add("bottom-[-50px]", "opacity-0");
+      scrollUp.classList.remove("bottom-10", "opacity-100");
    }
 }
